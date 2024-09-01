@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nunes Sports - Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Nunes Sports - Gerenciamento de Produtos</h1>
+    </header>
+    <main>
+        <form id="productForm">
+            <input type="hidden" id="productId">
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <input type="text" id="productCode" placeholder="Código do Produto" required>
+            <textarea id="productDescription" placeholder="Descrição do Produto"></textarea>
+            <input type="number" id="productPrice" placeholder="Preço do Produto" required step="0.01">
+            <button type="submit">Salvar Produto</button>
+        </form>
+        <table id="productsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Código</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
